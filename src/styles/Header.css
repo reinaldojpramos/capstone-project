@@ -1,0 +1,16 @@
+.header {
+    padding: 1rem;
+    display: grid;
+    justify-items: center;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 6rem;
+}
+
+.header-logo {
+    height: 40px;
+}

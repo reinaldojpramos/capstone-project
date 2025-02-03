@@ -1,0 +1,115 @@
+@import './Global.css';
+
+.container-div {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 2fr 1fr;
+    background-color: var(--primary-1);
+}
+
+h1.title {
+    color: var(--primary-2);
+    font-family: var(--display-title-font);
+    font-size: var(--display-title-size);
+    font-weight: var(--display-title-weight);
+    margin-bottom: 0;
+    margin-top: 5%;
+}
+
+h2.subtitle {
+    color: var(--secondary-3);
+    font-family: var(--sub-title-font);
+    font-size: var(--sub-title-size);
+    font-weight: var(--sub-title-weight);
+    margin-top: 0;
+    line-height: 0.1;
+}
+
+p.description {
+    color: var(--secondary-3);
+    font-family: var(--lead-text-font);
+    font-size: var(--lead-text-size);
+    font-weight: var(--lead-text-weight);
+    padding-right: 10%;
+}
+
+button.call-to-action {
+    background-color: var(--primary-2);
+    color: var(--secondary-4);
+    font-family: var(--section-title-font);
+    font-size: var(--section-title-size);
+    font-weight: var(--section-title-weight);
+    padding: 3% 10%;
+    margin-top: 0;
+    margin-bottom: 5%;
+    border: 1px solid var(--primary-1);
+    border-radius: 16px;
+}
+
+button.call-to-action:hover {
+    background-color: var(--primary-1);
+    color: var(--primary-2);
+    border: 1px solid var(--primary-2);
+    cursor: pointer;
+    animation: bounce 0.5s ease infinite;
+
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    70% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+img.food-image {
+    width: 50%;
+    border-radius: 16px;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    top: 10%;
+    margin-bottom: -15%;
+}
+
+@media (max-width: 1024px) {
+    .container-div {
+        grid-template-columns: 0.5fr 2.5fr 2fr 0.5fr;
+    }
+
+    h1.title {
+        font-size: 24px;
+    }
+
+    h2.subtitle {
+        font-size: 20px;
+    }
+
+    p.description {
+        font-size: 14px;
+    }
+
+    button.call-to-action {
+        width: 80%;
+        padding: 4% 0;
+        font-size: 14px;
+    }
+
+    img.food-image {
+        width: 100%;
+    }
+}

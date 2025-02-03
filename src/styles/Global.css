@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Markazi+Text:wght@400;700&display=swap');
+
+:root {
+    --primary-1: #495E57;
+    --primary-2: #F4CE14;
+    --secondary-1: #EE9972;
+    --secondary-2: #FBDABB;
+    --secondary-3: #EDEFEE;
+    --secondary-4: #333333;
+
+    --display-title-font: 'Markazi Text', serif;
+    --display-title-size: 64px;
+    --display-title-weight: 500;
+
+    --sub-title-font: 'Markazi Text', serif;
+    --sub-title-size: 40px;
+    --sub-title-weight: 400;
+
+    --lead-text-font: 'Karla', sans-serif;
+    --lead-text-size: 30px;
+    --lead-text-weight: 500;
+
+    --section-title-font: 'Karla', sans-serif;
+    --section-title-size: 20px;
+    --section-title-weight: 800;
+
+    --specials-section-font: 'Karla', sans-serif;
+    --specials-section-size: 16px;
+    --specials-section-weight: 800;
+
+    --card-title-font: 'Karla', sans-serif;
+    --card-title-size: 18px;
+    --card-title-weight: 700;
+
+    --paragraph-font: 'Karla', sans-serif;
+    --paragraph-size: 16px;
+    --paragraph-weight: 400;
+
+    --highlight-text-font: 'Karla', sans-serif;
+    --highlight-text-size: 16px;
+    --highlight-text-weight: 500;
+}

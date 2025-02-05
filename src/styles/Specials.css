@@ -1,0 +1,151 @@
+@import './Global.css';
+
+.specials-component {
+    display: grid;
+    justify-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.specials-title {
+    display: grid;
+    grid-template-columns: 3fr 8fr 2fr;
+    width: 100%;
+}
+
+.specials-title-text {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    font-family: var(--specials-section-alt-font);
+    font-size: var(--specials-section-alt-size);
+    font-weight: var(--specials-section-alt-weight);
+}
+
+.specials-title-text h1 {
+    width: 100%;
+    padding: 1%;
+}
+
+.specials-title-text a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.specials-title-text a button {
+    display: inline-block;
+    text-align: center;
+}
+
+button.online-menu {
+    background-color: var(--primary-2);
+    color: var(--secondary-4);
+    font-family: var(--section-title-font);
+    font-size: var(--section-title-size);
+    font-weight: var(--section-title-weight);
+    padding: 3% 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0px solid var(--primary-1);
+    border-radius: 16px;
+}
+
+button.online-menu:hover {
+    background-color: var(--primary-1);
+    color: var(--primary-2);
+    border: 0px solid var(--primary-2);
+    cursor: pointer;
+    animation: bounce 0.5s ease infinite;
+}
+
+.specials-cards-area {
+    display: grid;
+    grid-template-columns: 3fr 8fr 3fr;
+    width: 100%;
+}
+
+.specials-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.specials-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-3);
+    border-radius: 16px;
+    width: 300px;
+}
+
+.specials-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.specials-card-text {
+    padding: 10%;
+    padding-top: 5%;
+}
+
+.specials-card-text h2 {
+    font-family: var(--card-title-font);
+    font-size: var(--card-title-size);
+    font-weight: var(--card-title-weight);
+    margin-bottom: 10px;
+}
+
+.specials-card-text p {
+    color: var(--primary-1);
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-size);
+    font-weight: var(--paragraph-weight);
+}
+
+.specials-card-text p.price {
+    color: var(--secondary-1);
+    font-family: var(--highlight-text-font);
+    font-size: var(--highlight-text-size);
+    font-weight: var(--highlight-text-weight);
+    margin-bottom: 5px;
+}
+
+.order-now {
+    font-family: var(--highlight-text-font);
+    font-size: var(--highlight-text-size);
+    font-weight: var(--highlight-text-weight);
+    margin-left: 10%;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .empty-row {
+        height: 5px;
+    }
+
+    .specials-title-text {
+        font-size: var(--section-title-size);
+    }
+
+    button.online-menu {
+        font-size: var(--specials-section-size);
+    }
+
+    .specials-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .specials-card {
+        width: 80%;
+    }
+}

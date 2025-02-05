@@ -28,6 +28,10 @@
     --specials-section-size: 16px;
     --specials-section-weight: 800;
 
+    --specials-section-alt-font: 'Markazi Text', serif;
+    --specials-section-alt-size: 30px;
+    --specials-section-alt-weight: 400;
+
     --card-title-font: 'Karla', sans-serif;
     --card-title-size: 18px;
     --card-title-weight: 700;

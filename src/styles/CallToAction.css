@@ -2,7 +2,7 @@
 
 .container-div {
     display: grid;
-    grid-template-columns: 1fr 2.5fr 2fr 1fr;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
     background-color: var(--primary-1);
 }
 
@@ -54,6 +54,23 @@ button.call-to-action:hover {
 
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.food-image {
+    width: 50%;
+    border-radius: 16px;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    right: 0%;
+    top: 10%;
+    margin-bottom: -15%;
+}
+
 @keyframes bounce {
     0% {
         transform: translateY(0);
@@ -74,16 +91,6 @@ button.call-to-action:hover {
     100% {
         transform: translateY(0);
     }
-}
-
-img.food-image {
-    width: 50%;
-    border-radius: 16px;
-    object-fit: cover;
-    display: block;
-    position: relative;
-    top: 10%;
-    margin-bottom: -15%;
 }
 
 @media (max-width: 1024px) {

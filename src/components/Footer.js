@@ -10,7 +10,7 @@ function Footer() {
                 <img alt="Little Lemon Logo" src={logo} className="footer-logo" />
                 <div className="footer-nav">
                     <p>Doormat Navigation</p>
-                    <ul><Navbar listStyle="vertical-" /></ul>
+                    <ul><Navbar listStyle="vertical" isFooter="true"/></ul>
                 </div>
                 <div className="footer-box">
                     <p>Contact</p>

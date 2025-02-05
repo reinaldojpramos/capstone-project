@@ -19,7 +19,9 @@ function CallToAction() {
                         <button className='call-to-action'>Reserve a Table</button>
                     </Link>
                 </div>
-                <img className='food-image' src={restauranfood} alt='Restaurant food' />
+                <div className='image-container'>
+                    <img className='food-image' src={restauranfood} alt='Restaurant food' />
+                </div>
                 <div />
             </div>
         </>

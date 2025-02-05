@@ -7,7 +7,7 @@ function Header() {
         <header className="header">
             <div className="header-container">
                 <img alt="Little Lemon Logo" src={logo} className="header-logo"/>
-                <Navbar/>
+                <Navbar />
             </div>
         </header>
     );
